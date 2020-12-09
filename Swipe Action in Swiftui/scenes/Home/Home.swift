@@ -11,14 +11,9 @@ struct Home: View {
     
     @State var size = "Medium"
     @State var currentTab = "All"
-    
-    @State var items = [
-        
-        Item(title: "Stylish Table Lamp", price: "$20.00", subTitle: "We have amazing quality Lamp wide range.", image: "lamp"),
-        Item(title: "Modern Chair", price: "$60.00", subTitle: "New style of tables for your home and office.", image: "chair"),
-        Item(title: "Wodden Stool", price: "$35.00", subTitle: "Amazing Stylish in multiple Most selling item of this.", image: "stool"),
-    ]
-    
+    @State var s = 0
+    @State var filteredItems = items
+    @State var indexxx=0
     @GestureState var isDragging = false
     @State var changeSwipeOrientation:Bool = true
     // adding cart items...
@@ -127,7 +122,10 @@ struct Home: View {
                         
                         ForEach(tabs,id: \.self){tab in
                             
-                            Button(action: {currentTab = tab}) {
+                            Button(action: {
+                                currentTab = tab
+                                
+                            }) {
                                 
                                 Text(tab)
                                     .fontWeight(.bold)
@@ -141,14 +139,15 @@ struct Home: View {
                     }
                     .padding()
                     
-                    ForEach(items.indices){index in
-                        
+                  
+                    ForEach(filteredItems.indices){index in
+
                         //if changeSwipeOrientation = flase then right
                         //if changeSwipeOrientation = true then left
-                        
-                        
-                        OrderOrientation(cart: $cart, items: $items, index: index, isDragging: isDragging, leftOrRight: $changeSwipeOrientation)
-                            
+//                        indexxx = index
+
+                        OrderOrientation(cart: $cart, items: $filteredItems, index: index, isDragging: isDragging, leftOrRight: $changeSwipeOrientation)
+
                             .padding(.horizontal)
                             .padding(.top)
                     }
@@ -161,8 +160,17 @@ struct Home: View {
             Spacer()
             
         }
+      
         
-        
+    }
+    
+    func getItems(value:String) ->[Item] {
+        if value != "All"{
+            return items.filter{$0.title.lowercased().contains(value.lowercased())}
+        }
+        else{
+            return items
+        }
     }
     
 }

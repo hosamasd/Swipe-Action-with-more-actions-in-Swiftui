@@ -11,7 +11,7 @@ struct OrderOrientation: View {
    
     @Binding var cart : [Item]
     @Binding var items:[Item]
-    var index:Int
+     var index:Int
     @GestureState var isDragging = false
     @Binding var leftOrRight:Bool
     var isShown = false

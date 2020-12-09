@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TabBar: View {
     
-    @State var current = "Home"
+    @State var current = "Shimmer"
     
     var body: some View {
         
@@ -17,29 +17,40 @@ struct TabBar: View {
             
             TabView (selection: $current) {
                 
+                MainHomeShimmer()
+                    .tag("Shimmer")
+              
+                
+//                Text("Messages")
+               
+                
+//                Text("Account")
+               
                 Home()
                     .tag("Home")
                 
-                Text("Messages")
-                    .tag("Messages")
-                
-                Text("Account")
-                    .tag("Account")
+                MainStoreView()
+                    .tag("Stores")
                 
             }
             
             HStack(spacing:15) {
                 
                 //tabbutton
+                
+                TabButton(title: "Shimmer", image: "user", selected: $current)
+                
+                Spacer(minLength: 0)
+                
                 TabButton(title: "Home", image: "home", selected: $current)
                 
                 Spacer(minLength: 0)
                 
-                TabButton(title: "Messages", image: "messenger", selected: $current)
+                TabButton(title: "Stores", image: "messenger", selected: $current)
                 
-                Spacer(minLength: 0)
                 
-                TabButton(title: "Account", image: "user", selected: $current)
+                
+               
             }
             .padding(.vertical,12)
             .padding(.horizontal)

@@ -12,6 +12,7 @@ struct TabButton: View {
     var title,image:String
     @Binding var selected:String
     
+    
     var body: some View {
         
             
@@ -21,7 +22,9 @@ struct TabButton: View {
                
                 HStack(spacing:10) {
                 
-                    Image(image)
+                    
+                    
+                       Image( image)
                         .resizable()
                         .renderingMode(.template)
                         .frame(width: 25, height: 25)

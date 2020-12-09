@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EFD6D972580C6B500093622 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD6D952580C6B500093622 /* CustomNavigationView.swift */; };
+		4EFD6D982580C6B500093622 /* CardStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD6D962580C6B500093622 /* CardStoreView.swift */; };
+		4EFD6D9F2580C6EA00093622 /* HomeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD6D9E2580C6EA00093622 /* HomeStore.swift */; };
+		4EFD6DA32580C70200093622 /* AppItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD6DA22580C70200093622 /* AppItem.swift */; };
+		4EFD6DAA2580C79800093622 /* MainStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD6DA92580C79800093622 /* MainStoreView.swift */; };
+		4EFD6DB02580CA2300093622 /* HomeSimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD6DAF2580CA2300093622 /* HomeSimmer.swift */; };
+		4EFD6DB42580CA4700093622 /* MainHomeShimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD6DB32580CA4700093622 /* MainHomeShimmer.swift */; };
+		4EFD6DBB2580CA7100093622 /* CardShimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD6DB82580CA7100093622 /* CardShimmer.swift */; };
+		4EFD6DBC2580CA7100093622 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD6DB92580CA7100093622 /* CellView.swift */; };
+		4EFD6DBD2580CA7100093622 /* HomeTextShimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD6DBA2580CA7100093622 /* HomeTextShimmer.swift */; };
 		9F175A9A25759A3F00B53060 /* Swipe_Action_in_SwiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F175A9925759A3F00B53060 /* Swipe_Action_in_SwiftuiApp.swift */; };
 		9F175A9C25759A3F00B53060 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F175A9B25759A3F00B53060 /* ContentView.swift */; };
 		9F175A9E25759A4000B53060 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F175A9D25759A4000B53060 /* Assets.xcassets */; };
@@ -20,6 +30,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4EFD6D952580C6B500093622 /* CustomNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
+		4EFD6D962580C6B500093622 /* CardStoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStoreView.swift; sourceTree = "<group>"; };
+		4EFD6D9E2580C6EA00093622 /* HomeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStore.swift; sourceTree = "<group>"; };
+		4EFD6DA22580C70200093622 /* AppItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppItem.swift; sourceTree = "<group>"; };
+		4EFD6DA92580C79800093622 /* MainStoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStoreView.swift; sourceTree = "<group>"; };
+		4EFD6DAF2580CA2300093622 /* HomeSimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSimmer.swift; sourceTree = "<group>"; };
+		4EFD6DB32580CA4700093622 /* MainHomeShimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeShimmer.swift; sourceTree = "<group>"; };
+		4EFD6DB82580CA7100093622 /* CardShimmer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardShimmer.swift; sourceTree = "<group>"; };
+		4EFD6DB92580CA7100093622 /* CellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		4EFD6DBA2580CA7100093622 /* HomeTextShimmer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTextShimmer.swift; sourceTree = "<group>"; };
 		9F175A9625759A3F00B53060 /* Swipe Action in Swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swipe Action in Swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F175A9925759A3F00B53060 /* Swipe_Action_in_SwiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipe_Action_in_SwiftuiApp.swift; sourceTree = "<group>"; };
 		9F175A9B25759A3F00B53060 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +65,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EFD6D912580C66A00093622 /* tab bar */ = {
+			isa = PBXGroup;
+			children = (
+				9F175AB725759B0A00B53060 /* TabBar.swift */,
+				9F175ABA25759B1400B53060 /* TabButton.swift */,
+			);
+			path = "tab bar";
+			sourceTree = "<group>";
+		};
+		4EFD6D922580C68300093622 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9F175ABD25759B1E00B53060 /* CardView.swift */,
+				9F8931482576AA6A0017D4E2 /* OrderOrientation.swift */,
+				9F175AAD25759A6B00B53060 /* Home.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4EFD6D9A2580C6BC00093622 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				4EFD6D962580C6B500093622 /* CardStoreView.swift */,
+				4EFD6D952580C6B500093622 /* CustomNavigationView.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		4EFD6D9B2580C6C700093622 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				4EFD6DA92580C79800093622 /* MainStoreView.swift */,
+				4EFD6D9E2580C6EA00093622 /* HomeStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		4EFD6DA52580C70800093622 /* store */ = {
+			isa = PBXGroup;
+			children = (
+				4EFD6DA22580C70200093622 /* AppItem.swift */,
+			);
+			path = store;
+			sourceTree = "<group>";
+		};
+		4EFD6DAE2580CA1300093622 /* Shimmer */ = {
+			isa = PBXGroup;
+			children = (
+				4EFD6DB32580CA4700093622 /* MainHomeShimmer.swift */,
+				4EFD6DAF2580CA2300093622 /* HomeSimmer.swift */,
+			);
+			path = Shimmer;
+			sourceTree = "<group>";
+		};
+		4EFD6DB72580CA6300093622 /* Shimeer */ = {
+			isa = PBXGroup;
+			children = (
+				4EFD6DB82580CA7100093622 /* CardShimmer.swift */,
+				4EFD6DB92580CA7100093622 /* CellView.swift */,
+				4EFD6DBA2580CA7100093622 /* HomeTextShimmer.swift */,
+			);
+			path = Shimeer;
+			sourceTree = "<group>";
+		};
 		9F175A8D25759A3F00B53060 = {
 			isa = PBXGroup;
 			children = (
@@ -86,12 +170,11 @@
 		9F175AA925759A4C00B53060 /* scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4EFD6DAE2580CA1300093622 /* Shimmer */,
 				9F175A9B25759A3F00B53060 /* ContentView.swift */,
-				9F175AB725759B0A00B53060 /* TabBar.swift */,
-				9F175ABA25759B1400B53060 /* TabButton.swift */,
-				9F175ABD25759B1E00B53060 /* CardView.swift */,
-				9F8931482576AA6A0017D4E2 /* OrderOrientation.swift */,
-				9F175AAD25759A6B00B53060 /* Home.swift */,
+				4EFD6D912580C66A00093622 /* tab bar */,
+				4EFD6D922580C68300093622 /* Home */,
+				4EFD6D9B2580C6C700093622 /* Store */,
 			);
 			path = scenes;
 			sourceTree = "<group>";
@@ -99,6 +182,8 @@
 		9F175AAB25759A5300B53060 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				4EFD6DB72580CA6300093622 /* Shimeer */,
+				4EFD6D9A2580C6BC00093622 /* Store */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -106,6 +191,7 @@
 		9F175AAC25759A5900B53060 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				4EFD6DA52580C70800093622 /* store */,
 				9F175AB425759AFE00B53060 /* Item.swift */,
 			);
 			path = model;
@@ -180,12 +266,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EFD6DB42580CA4700093622 /* MainHomeShimmer.swift in Sources */,
+				4EFD6DA32580C70200093622 /* AppItem.swift in Sources */,
 				9F175ABE25759B1E00B53060 /* CardView.swift in Sources */,
 				9F8931492576AA6A0017D4E2 /* OrderOrientation.swift in Sources */,
+				4EFD6DB02580CA2300093622 /* HomeSimmer.swift in Sources */,
 				9F175AB525759AFF00B53060 /* Item.swift in Sources */,
+				4EFD6D972580C6B500093622 /* CustomNavigationView.swift in Sources */,
+				4EFD6DBC2580CA7100093622 /* CellView.swift in Sources */,
+				4EFD6D9F2580C6EA00093622 /* HomeStore.swift in Sources */,
+				4EFD6D982580C6B500093622 /* CardStoreView.swift in Sources */,
 				9F175A9C25759A3F00B53060 /* ContentView.swift in Sources */,
 				9F175AAE25759A6B00B53060 /* Home.swift in Sources */,
+				4EFD6DBB2580CA7100093622 /* CardShimmer.swift in Sources */,
+				4EFD6DAA2580C79800093622 /* MainStoreView.swift in Sources */,
 				9F175ABB25759B1400B53060 /* TabButton.swift in Sources */,
+				4EFD6DBD2580CA7100093622 /* HomeTextShimmer.swift in Sources */,
 				9F175A9A25759A3F00B53060 /* Swipe_Action_in_SwiftuiApp.swift in Sources */,
 				9F175AB825759B0A00B53060 /* TabBar.swift in Sources */,
 			);
